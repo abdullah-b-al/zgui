@@ -3442,7 +3442,12 @@ pub fn isKeyDown(key: Key) bool {
     return zguiIsKeyDown(key);
 }
 
+pub fn isKeyPressed(key: Key, repeat: bool) bool {
+    return zguiIsKeyPressed(key, repeat);
+}
+
 extern fn zguiIsKeyDown(key: Key) bool;
+extern fn zguiIsKeyPressed(key: Key, repeat: bool) bool;
 //--------------------------------------------------------------------------------------------------
 //
 // Helpers
